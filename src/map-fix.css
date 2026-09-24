@@ -73,3 +73,67 @@
 .scroll-cue {
   z-index: 1;
 }
+
+.brand-symbol {
+  align-items: center;
+  display: grid;
+  height: 34px;
+  mix-blend-mode: multiply;
+  overflow: hidden;
+  width: 34px;
+}
+
+.brand-symbol img {
+  display: block;
+  height: 48px;
+  max-width: none;
+  object-fit: cover;
+  transform: translate(-7px, -7px);
+  width: 48px;
+}
+
+.brand-wordmark {
+  display: block;
+  line-height: 1;
+}
+
+.brand-wordmark strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .14em;
+}
+
+.brand-wordmark small {
+  display: block;
+  font-size: 6px;
+  letter-spacing: .09em;
+  margin-top: 5px;
+  white-space: nowrap;
+}
+
+.brand-wordmark i {
+  font-family: Georgia, serif;
+  font-size: 9px;
+}
+
+@media (max-width: 560px) {
+  .brand-symbol {
+    height: 30px;
+    width: 30px;
+  }
+
+  .brand-symbol img {
+    height: 43px;
+    transform: translate(-6px, -6px);
+    width: 43px;
+  }
+
+  .brand-wordmark strong {
+    font-size: 13px;
+  }
+
+  .brand-wordmark small {
+    font-size: 5px;
+  }
+}
