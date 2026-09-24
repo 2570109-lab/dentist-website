@@ -54,7 +54,7 @@ function App() {
     <main>
       <section className="hero">
         <div className="hero-image" style={{ backgroundImage: `url(${clinic.images.hero})` }} />
-        <video className="hero-video" autoPlay muted loop playsInline poster={clinic.images.hero} aria-hidden="true">
+        <video className="hero-video" autoPlay muted loop playsInline preload="auto" poster={clinic.images.hero} aria-hidden="true" onLoadedData={(event) => { event.currentTarget.play().catch(() => undefined); }}>
           <source src="/video2.mp4" type="video/mp4" />
         </video>
         <div className="hero-shade" />
